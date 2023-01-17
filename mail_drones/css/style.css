@@ -22,8 +22,10 @@
   font-weight:  600;
 }
 
-
-
+  
+  .products .product img {
+    margin-bottom: 20px;
+  }
 
 body {
     width: 100%;
