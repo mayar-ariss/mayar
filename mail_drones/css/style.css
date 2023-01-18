@@ -22,7 +22,22 @@
   font-weight:  600;
 }
 
-  
+.responsive{
+    max-width:100%;
+    max-height:100%;
+  }
+ 
+ .center{
+    max-width: 100%;
+    height: auto;
+    display: table;
+    margin: 0 auto;
+ }
+ 
+ .parent{
+   position: relative;
+ }
+
   .products .product img {
     margin-bottom: 20px;
   }
@@ -290,6 +305,7 @@ h5{
 }
 
 .img-responsive {
+    max-width: 700px;
     margin:10px;
 }
 
@@ -384,6 +400,7 @@ a:hover {
 
 }
 
+
 .Press-under {
     color: #333332; 
     font-family: 'Source Sans Pro', sans-serif;
@@ -420,6 +437,16 @@ a:hover {
     margin: 0 auto;
 }
 
+.body-text-bold{
+    vertical-align: text-top;
+    font-family: 'Austin News Deck', serif;
+    margin-top: 0px;
+    text-align: left;
+    color: #333332;
+    font-size: 19px;
+    padding-right: 20px;
+    line-height: 135%;
+}
 
 .body-text-left{
     vertical-align: text-top;
