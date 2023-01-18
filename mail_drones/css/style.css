@@ -22,22 +22,6 @@
   font-weight:  600;
 }
 
-.responsive{
-    max-width:100%;
-    max-height:100%;
-  }
- 
- .center{
-    max-width: 100%;
-    height: auto;
-    display: table;
-    margin: 0 auto;
- }
- 
- .parent{
-   position: relative;
- }
-
   .products .product img {
     margin-bottom: 20px;
   }
@@ -305,8 +289,7 @@ h5{
 }
 
 .img-responsive {
-    max-width: 700px;
-    margin:10px;
+     margin:10px;  
 }
 
 .imageAlign{
