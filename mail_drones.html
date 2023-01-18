@@ -211,7 +211,7 @@
 </div>          
 
 <section id="WIProject" class=" content-section text-center">
-    <h3 > Description </h3>
+    <h3 > Background </h3>
     <!-- PORTFOLIO IMAGE 1 -->
     <div class="col-center">
         <div class="row row-centered">
@@ -219,13 +219,13 @@
                 <div class="body-text-left">
                     <div class="body-text-bold">
                         <b> 
-                            The global increase in urban population directly affects the efficiency of existing
-                            transportation
-                            systems. Demography is indeed correlated with car use. With technological progress, new
-                            solutions are explored. Drone mail delivery system is assessed to reduce delays in transportation networks.
+                          The global increase in urban population directly affects the efficiency of existing
+                          transportation
+                          systems. Demography is indeed correlated with car use. With technological progress, new
+                          solutions are explored. Drone mail delivery system is here assessed to reduce delays in transportation networks.
                         </b>
                     </div>
-                    <br /><br />
+                    <br />
                     <p>
                         This project aims to generate and optimise a network of hyperlocal last-mile distribution depots in
                         London, specifically in the districts of Camden, City of London, Westminster, Kensington and
@@ -255,6 +255,38 @@
             </div>
         </div>
     </div>
+</section>
+
+<section id="WIProject" class=" content-section text-center">
+  <h3 > Description </h3>
+  <!-- PORTFOLIO IMAGE 1 -->
+  <div class="col-center">
+      <div class="row row-centered">
+          <div class="col-xs-6 col-centered col-min">
+              <div class="body-text-left">
+                The main objective is to address the outlined urban issues, while ensuring that the facility expansion strategy maximises profit. The mathematical model takes as inputs the expected number of deliveries per month in a given neighbourhood, which depends on its total population and the time since the beginning of regional operations.  
+                  <br /><br />
+                  <p>
+                Economic constraints are set considering the total initial budget, depot rent, operating costs, and average revenue of which a certain percentage is set aside for further expansion. New warehouses are established every two months, providing enough funds are available to cover their cost of operation.
+                  </p>
+                  <br /><br />
+  
+  
+              </div>
+          </div><!-- /col -->
+
+          <div class="col-xs-6 col-centered col-min">
+              <!-- PORTFOLIO IMAGE 2 -->
+              <div class="body-text-right">
+                In this case study, the data is publicly available at <a href="https://data.london.gov.uk/dataset/lsoa-atlas" target="_blank"><span class="title">Greater London Authority</span></a>. With Python, the geospatial data is generated using GeoPandas. Then, the locations of the optimal combination of depots is determined using PulP. 
+                  <br /><br />
+                For optimality purposes, it is initially assumed that two warehouses can not serve the same neighbourhood, until it becomes impossible. Limiting assumptions to the model are that only one single warehouse can be established in a given neighbourhood, and must be close enough to its centroid.
+
+
+              </div><!-- /col -->
+          </div>
+      </div>
+  </div>
 </section>
 
 <!-- Publishing Section -->
