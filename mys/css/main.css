@@ -19,7 +19,6 @@ body {
 #videointro {
     z-index: 20;
     position: sticky;
-    align-items: center;
 }
 
 .fillBackground {
@@ -307,7 +306,7 @@ a:hover {
 }
 
 .logo {
-    height: 21px;
+    height: 20px;
     opacity: 1;
     display: inline-block;  
 }
