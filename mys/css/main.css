@@ -484,7 +484,11 @@ display:inline-block;
         grid-template-columns: 100%;
     }
 
-    
+    .citytext_Laval {
+        font-size: 14px;
+        display: block; float: left;
+    }
+
 
     .Main_title {
         font-size: 14px;
@@ -504,6 +508,10 @@ display:inline-block;
     .grid-container {
         grid-template-columns: 100% ;
     }
-}
 
+.citytext_Laval {
+    font-size: 14px;
+    display: block; float: left;
+}
+}
 
