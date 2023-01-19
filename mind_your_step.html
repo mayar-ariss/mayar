@@ -1,250 +1,310 @@
-<!DOCTYPE html><html><head>
+<!DOCTYPE html>
+<html>
+
+<head>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
     <link href="mys/css/main.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-        <title>Senseable City Lab Guides</title>
-        <meta charset="utf-8">
-    
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta property="og:type" content="website">
-        <meta property="og:locale" content="en_UK">
-        <meta property="og:title" content="Mind Your Step">
-        <meta property="og:description" content="Mind Your Step">
-        <meta property="og:image" content="mys/assets/network_tube.svg">
-        <meta property="og:url" content="https://mayarariss.com">
-        <meta name="twitter:card" content="summary_large_image">
-        
-        <link rel="icon" type="image/png" href="mys/assets/logos/tsl_logo.png">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap" rel="stylesheet">
-         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Mind Your Step</title>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_UK">
+    <meta property="og:title" content="Mind Your Step">
+    <meta property="og:description" content="Mind Your Step">
+    <meta property="og:image" content="mys/assets/network_tube.svg">
+    <meta property="og:url" content="https://mayarariss.com">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="icon" type="image/png" href="mys/assets/logos/tsl_logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 
 
 </head>
-                     <body>
-                         <section class="openingvideo">
 
-                             <div class="Intropage">
-                                 <div>
-                                     <video id="videointro" style="width: 100%;"  autoplay muted playsinline>
-                                         <source src="mys/video/Comp.mp4" type="video/mp4">
-                                     </video>
+<body>
+    <!-- <section class="openingvideo">
 
-                                 </div>
-                                 <div class="fillBackground" id="backgroundFill"></div>
-                             </div>
+        <div class="Intropage">
+            <div>
+                <video id="videointro" style="width: 100%;" autoplay muted playsinline>
+                    <source src="mys/video/Comp.mp4" type="video/mp4">
+                </video>
 
-                         </section>
+            </div>
+            <div class="fillBackground" id="backgroundFill"></div>
+        </div>
 
-                         <section class="header">
-                             <div class="row headers">
-                                 <div>
-                                     <a href="https://transport-systems.imperial.ac.uk/" target="_blank"> <img class="logo" src="mys/assets/logos/tsl_logo.png"/></a>
-                                 </div>
-                                 <div class="Main_title">Mind Your Step</div>
-                             </div>
-                         </section>
-
-                         <style>
-                            * {box-sizing: border-box;}
-                            body {font-family: 'Roboto Slab';}
-                            .mySlides {display: none;}
-                            img {vertical-align: middle;}
-                            
-                            /* Slideshow container */
-                            .slideshow-container {
-                              max-width: 1000px;
-                              position: relative;
-                              margin: auto;
-                            }
-                            
-                            /* Caption text */
-                            .text {
-                              color: #000000;
-                              font-family: 'Roboto Slab';
-                              font-size: 12px;
-                              padding: 2px 6px;
-                              position: relative;
-                              bottom: 2px;
-                              width: 100%;
-                              text-align: center;
-                            }
-                            
-                            /* Number text (1/3 etc) */
-                            .numbertext {
-                              color: #f2f2f2;
-                              font-size: 12px;
-                              padding: 8px 12px;
-                              position: absolute;
-                              top: 0;
-                            }
-                            
-                            /* The dots/bullets/indicators */
-                            .dot {
-                              height: 12px;
-                              width: 12px;
-                              margin: 0 2px;
-                              background-color: #ffe7f2;
-                              border-radius: 50%;
-                              display: inline-block;
-                              transition: background-color 0.6s ease;
-                            }
-                            
-                            .active {
-                              background-color: #ffb4d8;
-                            }
-                            
-                            /* Fading animation */
-                            .fade {
-                              animation-name: fade;
-                              animation-duration: 1.5s;
-                            }
-                            
-                            @keyframes fade {
-                              from {opacity: .4} 
-                              to {opacity: 1}
-                            }
-                            
-                            /* On smaller screens, decrease text size */
-                            @media only screen and (max-width: 300px) {
-                              .text {font-size: 7px}
-                            }
-                            </style>
-
-                         <div class="slideshow-container">
-
-                            <div class="mySlides">
-                              <img src="mys/images/network_nsf.svg" style="width:100%">
-                              <div class="text">Network of Stations</div>
-                            </div>
-                            
-                            <div class="mySlides">
-                              <img src="mys/images/network_sf.svg" style="width:100%">
-                              <div class="text">Existing Step-free Stations</div>
-                            </div>
-                            
-                            <div class="mySlides">
-                              <img src="mys/images/network_opt.svg" style="width:100%">
-                              <div class="text">Optimised Step-free Station</div>
-                            </div>
-                            
-                            </div>
-                            <br>
-                            
-                            <div style="text-align:center">
-                              <span class="dot"></span> 
-                              <span class="dot"></span> 
-                              <span class="dot"></span> 
-                            </div>
-                            
-                            <script>
-                            let slideIndex = 0;
-                            showSlides();
-                            
-                            function showSlides() {
-                              let i;
-                              let slides = document.getElementsByClassName("mySlides");
-                              let dots = document.getElementsByClassName("dot");
-                              for (i = 0; i < slides.length; i++) {
-                                slides[i].style.display = "none";  
-                              }
-                              slideIndex++;
-                              if (slideIndex > slides.length) {slideIndex = 1}    
-                              for (i = 0; i < dots.length; i++) {
-                                dots[i].className = dots[i].className.replace(" active", "");
-                              }
-                              slides[slideIndex-1].style.display = "block";  
-                              dots[slideIndex-1].className += " active";
-                              setTimeout(showSlides, 2000); // Change image every 2 seconds
-                            }
-                            </script>
-                            
-                        <section class="content_body col-8 offset-2">
-                            <section class="intro_text">
-                                <div class="Title_sec">Overview</div>
-                                <div class='grid-container_text'>
-                                    <div class="text_container body-text-bold">
-                                    <b>
-                                        Most built environments rely heavily on stairs. While elevators and ramps both exist, many designers choose not to use them. As of late 2020, only 29% of London's Tube stations were step-free (80 out of 272), with work underway in 12 more stations.
-                                    </b>
-                                    <br /><br />
-                                       Mind Your Step aims to provide step-free access to as many London Underground stations as possible. The objective is to decide how to best select the next batch of stations to be converted into step-free.
-                                    </div>
-                                    <div class="text_container">
-                                         The purpose of this project is to maximize the number of step-free passenger journeys.
-                                         A total national budget constraint is fixed for the next batch of 12 stations, while the cost of conversion to step-free depends on the station's category.
-                                         Also, the impact of service changes during a trip between two stations is omitted in the analysis of step-free journeys.
-                                    <br /><br />
-                                         Initially, the network's structure is generated, and the stations are classified by their type (step-free or non step-free) and popularity (arriving / departing passengers). The journeys can then be identified as fully or partially step-free. Finally, the optimisation model is implemented in Python, using both NetworkX, Pandas and PulP.
-                                    </div>
-                                </div>
-                            </section>
-                    
-
-                             <section class="teaching_team_sec">
-                                 <div class="grid-container_text">
-                                     <div>
-                                         <div class="Title_sec">Paper Release</div>
-
-                                         <div class="text_container">
-                                            <span class="Press-mid">The paper is available upon request. <br><br> Material on this web site can be used freely <br>in any publication provided
-                                                that:
-                                            </span>
-                            
-                                            <ol>
-                                                <li><span class="Press-under">It is duly credited as a project by Mayar Ariss</span>
-                                                </li>
-                                                <li>A PDF copy of the publication is sent to <a href="mailto:mayar313@mit.edu" target="_blank"><span class="title">mayar313@mit.edu</span></a></li>
-                                            </ol>
-                                         </div>
-                                     </div>
-                                     <div>
-                                         <div class="Title_sec">Team</div>
-                                         <div class="text_container">
-                                            <div class = "members" style ="font-style: oblique;">Lead Researcher</div>
-                                            <a href="https://www.mayarariss.com/" target="_blank"><span class="title">Mayar Ariss</span></a><br><br>
-                                            </div> 
-                                            <div class = "col-sm-6 team-right"> 
-                                                <div class = "members" style ="font-style: oblique;">Scientific Supervisor</div>
-                                                <a href="https://www.imperial.ac.uk/people/p.angeloudis" target="_blank"><span class="title">Dr. Panagiotis Angeloudis</span></a><br><br>
-                         
-                                                <div class = "members" style ="font-style: oblique;">Web &amp; Visualization</div>
-                                                <a href="https://www.mayarariss.com/" target="_blank"><span class="title">Mayar Ariss</span></a><br><br>
-                                               </div> 
-                                         </div>
-                                     </div>
-                                 </div>
-                             </section>
-
-                             <section id="footer">
-                                <div class=" footer-section">
-                                    <div class="icl-logo-area">
-                                         <!-- <br/><br/>  -->
-                                         <a href="https://www.imperial.ac.uk" target="_blank"><img src="mail_drones/images/ICL_logo.svg" width="140" /></a>
-                                    </div>
-                                    <br class="clearing" />
-                                </div>
-                            </section>
-
-                         </section>
-
-                        
+    </section> -->
 
 
 
+    <section class="header">
+        <div class="row headers">
+            <div>
+                <a href="https://transport-systems.imperial.ac.uk/" target="_blank"> <img class="logo"
+                        src="mys/assets/logos/tsl_logo.png" /></a>
+            </div>
+            <div class="Main_title">Mind Your Step</div>
+        </div>
+    </section>
 
-                         <!-- Optional JavaScript for Bootstrap -->
-                         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-                         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-                         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-                         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-                         <!-- D3 Library -->
-                         <script src="https://d3js.org/d3.v5.min.js"></script>
-                         <!-- Local JavaScript -->
-                         <script src='mys/js.js' type='text/javascript' defer></script>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto Slab';
+        }
+
+        .mySlides {
+            display: none;
+        }
+
+        img {
+            vertical-align: middle;
+        }
+
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+
+        /* Caption text */
+        .text {
+            color: #000000;
+            font-family: 'Roboto Slab';
+            font-size: 12px;
+            padding: 2px 6px;
+            position: relative;
+            bottom: 2px;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+            height: 12px;
+            width: 12px;
+            margin: 0 2px;
+            background-color: #ffe7f2;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active {
+            background-color: #ffb4d8;
+        }
+
+        /* Fading animation */
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+            .text {
+                font-size: 7px
+            }
+        }
+    </style>
+
+    <div class="slideshow-container">
+
+        <div class="mySlides">
+            <img src="mys/images/network_nsf.svg" style="width:100%">
+            <div class="text">Network of Stations</div>
+        </div>
+
+        <div class="mySlides">
+            <img src="mys/images/network_sf.svg" style="width:100%">
+            <div class="text">Existing Step-free Stations</div>
+        </div>
+
+        <div class="mySlides">
+            <img src="mys/images/network_opt.svg" style="width:100%">
+            <div class="text">Optimised Step-free Station</div>
+        </div>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
 
 
-                     </body></html>
+    <section class="content_body col-8 offset-2">
+
+        <section class="intro_text">
+            <div class="Title_sec ">Overview</div>
+            <div class='grid-container_text citytext_Laval'>
+                <div class="text_container body-text-bold citytext_Laval">
+                    <b>
+                        Most built environments rely heavily on stairs. While elevators and ramps both exist, many
+                        designers choose not to use them. As of late 2020, only 29% of London's Tube stations were
+                        step-free (80 out of 272), with work underway in 12 more stations.
+                    </b>
+                    <br /><br />
+                    Mind Your Step aims to provide step-free access to as many London Underground stations as
+                    possible.
+                    The objective is to decide how to best select the next batch of stations to be converted into
+                    step-free.
+                </div>
+                <div class="text_container citytext_Laval">
+                    The purpose of this project is to maximize the number of step-free passenger journeys.
+                    A total national budget constraint is fixed for the next batch of 12 stations, while the cost of
+                    conversion to step-free depends on the station's category.
+                    Also, the impact of service changes during a trip between two stations is omitted in the
+                    analysis of
+                    step-free journeys.
+                    <br /><br />
+                    Initially, the network's structure is generated, and the stations are classified by their type
+                    (step-free or non step-free) and popularity (arriving / departing passengers). The journeys can
+                    then
+                    be identified as fully or partially step-free. Finally, the optimisation model is implemented in
+                    Python, using both NetworkX, Pandas and PulP.
+                </div>
+
+            </div>
+
+
+
+        </section>
+
+
+        <section class="intro_text">
+            <div class="grid-container_text citytext_Laval ">
+                <div>
+                    <div class="Title_sec">Paper Release</div>
+
+                    <div class="text_container">
+                        <span class="Press-mid">The paper is available upon request. <br><br> Material on this web
+                            site
+                            can be used freely <br>in any publication provided
+                            that:
+                        </span>
+
+                        <ol>
+                            <li><span class="Press-under">It is duly credited as a project by Mayar Ariss</span>
+                            </li>
+                            <li>A PDF copy of the publication is sent to <a href="mailto:mayar313@mit.edu"
+                                    target="_blank"><span class="title">mayar313@mit.edu</span></a></li>
+                        </ol>
+                    </div>
+                </div>
+                <div>
+                    <div class="Title_sec">Team</div>
+                    <div class="text_container">
+                        <div class="members" style="font-style: oblique;">Lead Researcher</div>
+                        <a href="https://www.mayarariss.com/" target="_blank"><span class="title">Mayar
+                                Ariss</span></a><br><br>
+                    </div>
+                    <div class="col-sm-6 team-right">
+                        <div class="members" style="font-style: oblique;">Scientific Supervisor</div>
+                        <a href="https://www.imperial.ac.uk/people/p.angeloudis" target="_blank"><span class="title">Dr.
+                                Panagiotis Angeloudis</span></a><br><br>
+
+                        <div class="members" style="font-style: oblique;">Web &amp; Visualization</div>
+                        <a href="https://www.mayarariss.com/" target="_blank"><span class="title">Mayar
+                                Ariss</span></a><br><br>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+
+        <section id="footer">
+            <div class=" footer-section">
+                <div class="icl-logo-area">
+                    <!-- <br/><br/>  -->
+                    <a href="https://www.imperial.ac.uk" target="_blank"><img src="mail_drones/images/ICL_logo.svg"
+                            width="140" /></a>
+                </div>
+                <br class="clearing" />
+            </div>
+        </section>
+
+    </section>
+
+
+
+
+
+
+    <!-- Optional JavaScript for Bootstrap -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <!-- D3 Library -->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <!-- Local JavaScript -->
+    <script src='mys/js.js' type='text/javascript' defer></script>
+
+
+</body>
+
+</html>
