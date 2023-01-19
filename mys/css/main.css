@@ -19,6 +19,7 @@ body {
 #videointro {
     z-index: 20;
     position: sticky;
+    align-items: center;
 }
 
 .fillBackground {
@@ -323,7 +324,7 @@ a:hover {
     top: 20px;
     font-family: Roboto Mono;
     font-weight: Bold;
-    font-size: 18px;
+    font-size: 20px;
     opacity: 1;
     text-align: left;
 }
@@ -491,7 +492,7 @@ display:inline-block;
 
 
     .Main_title {
-        font-size: 14px;
+        font-size: 20px;
     }
 
     .logo {
@@ -513,5 +514,14 @@ display:inline-block;
     font-size: 14px;
     display: block; float: left;
 }
+
+.logo {
+    height:20px;
+}
+
+.logo_bottom {
+    height: 15px;
+}
+
 }
 
