@@ -1,0 +1,488 @@
+@media (min-width: 576px) {
+  .tooltip-col {
+    padding-top: 0px !important;
+  }
+}
+
+@media (min-width: 768px) { 
+  h1 {
+    font-size: 50pt !important;
+  }
+
+  #title {
+    font-size: 30pt !important;
+    padding-top: 0px !important;
+  }
+
+  #map-col {
+    margin-bottom: 40px !important;
+  }
+}
+
+@media (min-width: 992px) {
+  #map-col {
+    margin-bottom: 20px !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  #map-col {
+    margin-bottom: 0px !important;
+  }
+}
+
+h1 {
+    font-family: 'BagnardRegular'; 
+    font-weight: 400;
+    font-size: 36pt; /* larger size specified in media query */
+    color: #003FFF;
+}
+
+
+h2 {
+    font-family: 'BagnardRegular'; 
+    font-weight: 400;
+    font-size: 30pt;
+    color: #003FFF;
+}
+
+h3 {
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 600;
+  font-size: 16px;
+  color: #505050;
+}
+
+h4 {
+  font-family: 'Noto Sans SC', sans-serif;
+	font-size: 18pt;
+	color: #505050;
+}
+
+h5 {
+    font-family: 'BagnardRegular', sans-serif;
+    font-weight: 300;
+    font-size: 21pt;
+    color: #505050;
+}
+
+h6 {
+    font-family: 'BagnardRegular';
+    font-size: 20px;
+    color: #505050;
+    padding-top: 40px;
+    text-decoration: underline;
+    line-height: 1.4;
+}
+
+
+.bgfooter {
+    background-color: white;
+}
+
+.english {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 500;
+    font-size: 14px;
+    color: #505050;
+    margin-top: 80px;
+}
+
+.englishfooter1 {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 500;
+    font-size: 14px;
+    color: #505050;
+    text-align: justify;
+    padding-top: 40px;
+}
+
+.englishfooter2 {
+    font-family: 'IBM Plex Mono' , monospace;
+    font-weight: 500;
+    font-size: 14px;
+    color: #505050;
+    
+    padding-top: 10px;
+}
+
+#header {
+    display: flex;
+    padding-top: 40px;
+}
+#title {
+    font-family: 'BagnardRegular'; 
+    font-weight: 400;
+    font-size: 16pt; /* larger size specified in media query */
+    padding-top: 2%; /* no padding specified in media query */
+    color: #505050;
+}
+
+.chaptertitle {
+    text-align: center;
+}
+
+#beforefooter {
+  margin-bottom: 80px;
+}
+
+.footer {
+    color: #505050;
+  }
+
+#footer {
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+.vl {
+    border-left: 1px solid #505050;
+    height: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.logo {
+    max-height: 40px;
+}
+
+.logo a img {
+    padding: 6% 0;
+}
+
+.intro {
+	text-align: center;
+}
+
+.top1 {
+	padding-top: 200px;
+}
+
+.top2 {
+    padding-top: 300px;
+}
+
+.top3 {
+    margin-top: 120px;
+}
+
+.hz {
+    border-top: 1px solid #505050;
+    width: 100px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.radartitle {
+  margin-top: 150px;
+}
+
+.badkerning {
+	letter-spacing: -6px;
+}
+
+.credits {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.labs {
+    margin-right: 30px;
+}
+
+/* FOG CSS */
+#fog-container {
+    overflow-x: hidden; 
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+#foglayer_01 {
+    width: 200%;
+    height: 100%;
+    position: absolute;
+  }
+#foglayer_01 .image01, #foglayer_01 .image02 {
+  background: url("./assets/fog/fog1-8x-light-tint.png") repeat-x top left;
+  background-size: 100% 100%; /* img fits but stretches on vertical screens, tried "cover" but end of img is apparent */
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+
+.animated_01 {
+  animation: /*foglayer_01_opacity 10s linear infinite,*/ foglayer_moveme 60s linear infinite;
+  -webkit-animation: /*foglayer_01_opacity 10s linear infinite,*/ foglayer_moveme 60s linear infinite;
+}
+  
+#foglayer_02 {
+  width: 200%;
+  height: 100%;
+  position: absolute;
+}
+#foglayer_02 .image01, #foglayer_02 .image02 {
+  background: url("./assets/fog/fog2-8x-light-tint.png") repeat-x top left;
+  background-size: 100% 100%; /* img fits but stretches on vertical screens, tried "cover" but end of img is apparent */
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+
+.animated_02 {
+  animation: /*foglayer_02_opacity 21s linear infinite,*/ foglayer_moveme 30s linear infinite;
+  -webkit-animation: /*foglayer_02_opacity 21s linear infinite,*/ foglayer_moveme 30s linear infinite;
+}
+
+
+@keyframes foglayer_moveme {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
+  }
+}
+@-webkit-keyframes foglayer_moveme {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
+@keyframes foglayer_01_opacity {
+  0% {
+    opacity: .1;
+  }
+  22% {
+    opacity: .5;
+  }
+  40% {
+    opacity: .9;
+  }
+  58% {
+    opacity: .9;
+  }
+  80% {
+    opacity: .5;
+  }
+  100% {
+    opacity: .1;
+  }
+}
+@-webkit-keyframes foglayer_01_opacity {
+  0% {
+    opacity: .1;
+  }
+  22% {
+    opacity: .5;
+  }
+  40% {
+    opacity: .9;
+  }
+  58% {
+    opacity: .9;
+  }
+  80% {
+    opacity: .5;
+  }
+  100% {
+    opacity: .1;
+  }
+}
+
+@keyframes foglayer_02_opacity {
+  0% {
+    opacity: .5;
+  }
+  25% {
+    opacity: .2;
+  }
+  50% {
+    opacity: .9;
+  }
+  80% {
+    opacity: .9;
+  }
+  100% {
+    opacity: .5;
+  }
+}
+@-webkit-keyframes foglayer_02_opacity {
+  0% {
+    opacity: .5;
+  }
+  25% {
+    opacity: .2;
+  }
+  50% {
+    opacity: .9;
+  }
+  80% {
+    opacity: .9;
+  }
+  100% {
+    opacity: .5;
+  }
+}
+
+@keyframes foglayer_03_opacity {
+  0% {
+    opacity: .8;
+  }
+  27% {
+    opacity: .2;
+  }
+  52% {
+    opacity: .9;
+  }
+  68% {
+    opacity: .9;
+  }
+  100% {
+    opacity: .8;
+  }
+}
+@-webkit-keyframes foglayer_03_opacity {
+  0% {
+    opacity: .8;
+  }
+  27% {
+    opacity: .2;
+  }
+  52% {
+    opacity: .9;
+  }
+  68% {
+    opacity: .9;
+  }
+  100% {
+    opacity: .8;
+  }
+}
+
+#map-col {
+  margin-bottom: 60px;
+}
+
+#lineChart-row {
+  padding-top: 160px;
+}
+
+.map-label, .lineChart-label, .radar-label, .radar-axis-label{
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 500;
+  font-size: 12px;
+  fill: #505050;
+}
+
+.map-label {
+  position: absolute;
+  line-height: 1.2;
+}
+
+.radar-axis-label {
+  fill: #909090 !important;
+}
+
+.radar-row {
+  padding-top: 60px;
+}
+
+.radarLevels {
+  stroke: #737373;
+  opacity: 0.2;
+  stroke-width: 1px;
+}
+
+.radarAxisLabel {
+  font-size: 8px;
+  fill: #505050;
+}
+
+.line {
+  stroke: #737373;
+  stroke-width: 1px;
+  opacity: 0.2;
+}
+
+.radarStroke {
+  fill: none;
+}
+
+.radarLegend {
+  fill: #505050;
+}
+
+.tooltip-col {
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-top: 60px;
+}
+
+.tooltip-row {
+  border: 1px solid #003FFF;
+  padding: 30px 20px;
+  margin: auto;
+}
+
+.title-tooltip-english, .body-tooltip-english {
+  text-align: left;
+  color: #003FFF;
+  font-size: 12px;
+}
+
+.title-tooltip-english {
+  font-weight: 700;
+}
+
+.title-tooltip-mandarin, .body-tooltip-mandarin {
+  color: #003FFF;
+  font-size: 12px;
+}
+
+.title-tooltip-mandarin {
+  font-weight: 900;
+}
+
+.title-tooltip {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 0px;
+}
+
+.body-tooltip {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.inactive {
+  opacity: 0;
+}
+
+.active {
+  opacity: 1 !important;
+}
+
+.active-stroke {
+  stroke: #003FFF !important;
+  /* stroke-width: 1px; */
+}
+
+.active-overlap {
+  stroke: #003FFF !important;
+  stroke-width: 2px !important;
+}
+
+@media screen and (max-width: 500px) {
+
+  .grid-container {
+      grid-template-columns: 100% ;
+  }
