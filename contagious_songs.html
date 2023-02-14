@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>Contagious Songs</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:title" content="Contagious Songs">
+    <meta property="og:description" content="Designing a concert's stage and viewing platforms">
+    <meta property="og:image" content="https://mayarariss.com/dist/pixelprof.png">
+    <meta property="og:url" content="https://mayarariss.com/contagious_songs/">
+    
+    <link rel="icon" type="image/png" href="./assets/ICL_logo.svg">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+    <link href=style.css type="text/css" rel=stylesheet>
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:500,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/bagnard" type="text/css"/>
+  
+    </head>
+<body>
+    <style>
+        body { background-color: #F7F7F7; }
+    </style>
+    	
+    <!--header-->
+
+    <div id="header">
+        <div class="container">
+            <div class="row">
+                <div class="logo col-auto">
+                    <a href="https://imperial.ac.uk" target="_blank">
+                        <a href="https://www.imperial.ac.uk" target="_blank"><img src="assets/ICL_logo.svg" width="100" /></a>
+                    </a>
+                </div>
+                <div class="vl"></div>
+                <div id="title" class="logo col-auto">
+                    <div>Contagious Songs</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--intro-->
+
+    <div class="container trigger">
+        <div class="row">
+                <div class="col-md-10 offset-md-1">
+                <h1 class="intro top1">Designing a concert's stage and viewing platforms<br></h1>
+                <div class="hz"></div>
+                <h5 class="intro"> to protect concert-goers from SARS-CoV-2 </h5>
+            </div>
+        </div>                
+    </div>
+
+    <div class="container trigger">
+        <div class="row">
+                <div class="col-md-10 offset-md-1">
+                <h1 class="intro top2"> <span class="badkerning">R</span>efining government guidelines</h1>
+                <div class="hz"></div>
+                <h5 class="intro">for outdoor and indoor spaces.</h5>
+            </div>
+        </div>                
+    </div>
+
+    <!--fog-->
+
+    <div id="fog-container">
+        <div id="foglayer_01" class="fog animated_01">
+            <div class="image image01 layer01"></div>
+            <div class="image image02 layer01"></div>
+        </div>
+        <div id="foglayer_02" class="fog animated_02">
+            <div class="image image01 layer02"></div>
+            <div class="image image02 layer02"></div>
+        </div>  
+    </div>
+
+    <!--Overview-->
+
+    <div class="container trigger">
+        <div class="row">
+                <div class="col-md-10 offset-md-1">
+                <h2 class="chaptertitle top2">Overview</h2>
+                <h5 class="intro"></h5>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-5 offset-md-1"> 
+                <p class="english">To reduce the spread of COVID-19 by airborne (aerosol) transmission of SARS-CoV-2, it is necessary to identify the governing transport processes and parameters of air pollution.</br></br> The aim is to produce a theoretical model and predict spacial virus concentrations, as well as the growth rate of a contaminated region.</p>
+            </div>
+            <div class="col-md-5"> 
+                <p class="english">Given the approximate quanta emission rates of SARS-CoV-2, the viewing platforms and the stage are designed to accomodate a certain number of people.</br></br> The rates are different for people breathing at rest, breathing during heavy activity, speaking during light activity and speaking loudly/singing.</p>
+            </div>
+        </div> 
+
+        <!-- <div class="row" id="map-row">
+            <div class="col-sm-8" id="map-col">
+                <div id="map-div"></div>
+                <div class="legend" id="legend-map"></div>
+            </div>
+            <div class="col-sm-4 tooltip-col" id="tooltip-map">
+                <div class="row tooltip-row inactive">
+                    <div class="col-sm-6 tooltip-english">
+                        <p class="english title-tooltip title-tooltip-english"></p>
+                        <p class="english body-tooltip body-tooltip-english"></p>
+                    </div>
+                    <div class="col-sm-6 tooltip-mandarin">
+                        <p class="mandarin title-tooltip title-tooltip-mandarin"></p>
+                        <p class="mandarin body-tooltip body-tooltip-mandarin"></p>
+                    </div>
+                </div>
+            </div>
+        </div>  -->
+
+        <!-- <div class="row">
+            <div class="col-md-5 offset-md-1"> 
+                <p class="english">Given the approximate quanta emission rates of SARS-CoV-2, the viewing platforms and the stage are designed to accomodate a certain number of people.</p>
+            </div>
+            <div class="col-md-5"> 
+                <p class="english">The rates are different for people breathing at rest, breathing during heavy activity, speaking during light activity and speaking loudly/singing.</p>
+            </div>
+        </div>               -->
+    </div>
+
+    <!--Outdoor Design-->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 offset-md-1">
+                <h2 class="chaptertitle top3">Outdoor Transmission of SARS-CoV-2</h2>
+                <h5 class="intro"></h5>
+            </div> 
+        </div>    
+
+        <div class="row ">
+            <div style="margin:20px">
+                <p class="english"> In the following simulation, 5 infected concert-goers are considered as distinct sources fixed in
+                    space. Using the analytical solution for advection-diffusion of a Gaussian plume, and at increasing
+                    times, two scenarios are considered: NO WIND and WIND. The standard advection-diffusion-reaction model deals with
+                    the time evolution of the virus in air. The mathematical equations describing this evolution are partial
+                    differential equations derived from mass balances. The overall change in concentration is described by the 2-D
+                    advection-diffusion equation:
+                    <br><br>
+                
+                
+                    \[ \frac{\partial}{\partial t} \left\langle\bar{C}(x,y,t) \right\rangle+\frac{\partial}{\partial x} \left(u(x,y)\left\langle\bar{C}(x,y,t) \right\rangle\right) + \frac{\partial}{\partial y}\left(v(x,y)\left\langle\bar{C}(x,y,t) \right\rangle \right)
+                    = \frac{\partial}{\partial x} \left(D_x \frac{\partial}{\partial x}\left\langle\bar{C}(x,y,t) \right\rangle\right) +
+                    \frac{\partial}{\partial y} \left(D_y \frac{\partial}{\partial y}\left\langle\bar{C}(x,y,t) \right\rangle\right)
+                
+                    \]<br>
+                    \[x, y \in \mathbb{R} , t\geq0\] 
+                
+                </p>
+            
+            
+                <p class="english"> The solution for the continuous release of COVID in 3D is given by:
+            
+            
+                    
+                    \[ C(x,y,t)=
+                    \frac{\dot{M}}{2\,\sqrt{{\pi}^2\,\sigma^2_x\,\sigma^2_y}}{e}^{-\frac{{\left(X-U_x\,t\right)}^2}{2\,\sigma^2_x}-\frac{{\left(Y-U_y\,t\right)}^2}{2\,\sigma^2_y}}
+                    \]
+                     
+            
+                </p>
+            </div>
+        </div>  
+
+        <div class="row" id="lineChart-row">
+            <div class="col-sm-7 col-md-6 offset-md-1" id="lineChart-col">
+            </div>
+
+            <img src="assets/nowindapp.gif" style="width: 50%; max-width: 70%; height: auto;">
+            <img src="assets/windapp.gif" style="width: 50%; max-width: 70%; height: auto;">
+
+            <div class="row">
+    
+              </div>
+
+
+            <!-- <div class="col-sm-5 tooltip-col" id="tooltip-lineChart">
+                <div class="row tooltip-row">
+                    <div class="col-sm-6 tooltip-english">
+                        <p class="english body-tooltip body-tooltip-english">People in a city with an income of 20,300 Yuan above the average are 1.6x more sensitive.</p>
+                    </div>
+                    <div class="col-sm-6 tooltip-mandarin">
+                        <p class="mandarin body-tooltip body-tooltip-mandarin">收入超过平均收入20,300元的城市居民对空气污染的敏感程度是平均收入居民的1.6倍。</p>
+                    </div>
+                </div>
+            </div> -->
+
+        </div>  
+      
+    </div>
+
+    <!--Indoor Design-->
+
+    <!-- <div class="container">
+        <div class="row">
+                <div class="col-md-10 offset-md-1">
+                <h2 class="chaptertitle top3">Indoor Transmission of SARS-CoV-2</h2>
+            </div>
+        </div>
+
+          
+    </div> -->
+
+    <!--footer -->
+
+    <div class="bgfooter">
+        <div class="container" >
+            <div class="row" id="footer">
+                <div class="col-md-5 offset-md-1"> 
+                    
+                    <h6>Paper Release</h6>
+                    </a>
+                    <p class="englishfooter2">The material on this website can be used freely in any publication provided that:<br><br><br> 
+                        1. It is duly credited as a project by Mayar Ariss<br><br>
+                        2. A PDF copy of the publication is sent to <A href="mailto:eddy.ariss19@imperial.ac.uk">eddy.ariss19@imperial.ac.uk</A>
+                        <h6 class="footer">Team</h6>
+                        <p class="englishfooter1">
+
+            
+                        Lead Researcher<br>
+                        <a href="https://www.mayarariss.com/" target="_blank"><span>Mayar Ariss</span></a><br><br>
+                        Scientific Supervisor <br>
+                        <a href="https://www.imperial.ac.uk/people/a.callaghan" target="_blank"><span class="title">Dr. Adrian Callaghan</span></a><br><br>
+                        Web Design <br>
+                        <a href="https://www.mayarariss.com/" target="_blank"><span>Mayar Ariss</span></a><br><br>
+                        </p>
+						<BR><BR>
+                    <div class="credits">
+
+                            <a href="https://www.imperial.ac.uk" target="_blank"><img src="assets/ICL_logo.svg" width="170" /></a>
+                        <br/>
+                        <br/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+        <!-- Optional JavaScript for Bootstrap -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <!-- D3 Library -->
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+        <!-- Scrollama -->
+        <script src='https://unpkg.com/intersection-observer@0.5.0/intersection-observer.js'></script>
+        <script src='https://unpkg.com/scrollama'></script>
+        <!-- Local JavaScript -->
+        <script src='script.js' type='text/javascript'></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>  
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+              tex2jax: {inlineMath: [['$','$']]},
+              "HTML-CSS": { linebreaks: { automatic: true } },
+              CommonHTML: { linebreaks: { automatic: true } },
+              SVG: { linebreaks: { automatic: true } }
+            });
+            </script>
+            <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS_HTML">
+            </script>
+    </body>
+</html>
