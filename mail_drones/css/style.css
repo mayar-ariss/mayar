@@ -33,7 +33,7 @@ body {
     color: #fff;
     background-color: #fff;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale;  
 
 }
 
@@ -43,7 +43,7 @@ html {
 }
 
 header {
-    margin: 20px;
+    margin:0 auto;
     margin-top:0;
     background-color: white;
     position: fixed;
@@ -54,7 +54,7 @@ header {
 
 header div.logo_area {
     position: absolute;
-    left: -1px;
+    left: 5px;
     z-index: 2;
     background-color: white;
     padding-right: 20px;
@@ -157,105 +157,20 @@ h5{
   top: 350px;
 }
   
-#redbox{ 
-    width:25px;
-    height:15px;
-    background:#f2390c;
-    margin-right: 7px;
-    margin-top:3px;
-}
-
-#redtext{
-    position: relative;
-    text-align: left;
-    color: #f2390c;
-    margin-right: 10px;
-    font-size: 14px;
-    font-weight: 600;
-    font-style: italic;
-}
-
-#bluebox{
-    width:25px;
-    height:15px;
-    background:#2c81c0;
-    margin-right: 7px;
-
-    font-size: 14px;
-    font-weight: 600;
-    font-style: italic;
-    margin-top:3px;
-}
-#bluetext{
-    position: relative;
-    text-align: left;
-    color:#2c81c0;
-
-    font-size: 14px;
-    margin-top: -1px;
-
-    font-weight: 600;
-    font-style: italic;
-}
-
-#greenbox{
-    width:25px;
-    height:15px;
-    background:#2aa450;
-    margin-right: 7px;
-    margin-top:3px;
-}
-#greentext{
-    position: relative;
-    text-align: left;
-    color: #2aa450;
-    line-height: 1.3em;  
-
-    font-size: 14px;
-    font-weight: 600;
-    font-style: italic;
-    margin-right: 10px;
-}
-
 
 .bold {
     margin-top: 0px;
 }
 
 /*modified*/
-.legend {
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-
-    -ms-flex-direction: row;
-    -webkit-flex-direction: row 
-    flex-direction: row;
-    
-    -ms-flex-align-items: center;
-    -webkit-align-items: center;
-    align-items: center;
-    
-    -ms-flex-justify-content: center;    
-    -webkit-justify-content: center;
-    justify-content: center;    
-    
-    padding: 0px;
-    margin: 0 auto;
-    font-size: 12px;
-    margin-bottom: 40px;
-}
 
 
-
-/*photo*/
 .content-section {
     padding-top: 50px;
 }
 
 .photocontainer{
     display: flex;  
-
 }
 
 /*modified*/
@@ -282,11 +197,6 @@ h5{
     margin: 0 auto;
 }
 
-
-
-.photo-third {
-
-}
 
 .img-responsive {
      margin:10px;  
@@ -421,37 +331,17 @@ a:hover {
 }
 
 .body-text-bold{
-    vertical-align: text-top;
+    /* vertical-align: text-top; */
     font-family: 'Austin News Deck', serif;
-    margin-top: 0px;
-    text-align: left;
+    font-weight: bold;
+    /* text-align: center; */
     color: #333332;
     font-size: 19px;
-    padding-right: 20px;
-    line-height: 135%;
+    margin-top: 40px;
+    /* padding-right: 20px; */
+    /* line-height: 135%; */
 }
 
-.body-text-left{
-    vertical-align: text-top;
-    margin-top: 0px;
-    text-align: left;
-    color: #333332;
-    font-size: 14px;
-    padding-right: 20px;
-    line-height: 149%;
-
-}
-
-.body-text-right{
-    text-align: left;
-    margin: 0 0 25px;
-    color: #333332;
-    font-size: 14px;
-    margin-bottom: 30px;   
-    padding-right: 20px;
-    line-height: 149%;
-
-}
 
 .body-text-publication{
     text-align: left;
@@ -490,7 +380,7 @@ a:hover {
     padding-right: 13%; 
 }
 .col-centered {
-    display:inline-block;
+    /* display:inline-block; */
     float:none;
     /* reset the text-align */
     text-align:left;
@@ -542,15 +432,9 @@ ol li {
 
 .footer-section {
     background-color: #fff;
-    margin-bottom: 300px;
-    margin-top: 50px;
+    margin:0 auto;
     border-top: 1px solid #c0c0c0;
 
-}
-
-.footer-section .mit-senseable-logo-area {
-    margin-top: 10px;
-    float:left;
 }
 
 .footer-section .fmi-area {
@@ -585,7 +469,18 @@ br.clearing {
     margin-left:105px;
 }
 
+.english {
+    /* font-family: 'IBM Plex Mono', monospace; */
+    font-weight: 500;
+    font-size: 15px;
+    color: #505050;
+    margin-top: 40px; 
+    
+}
 
+.top2 {
+    padding-top: 70px;
+}
 
 @media (max-width: 1200px) {
 
@@ -613,13 +508,6 @@ br.clearing {
     .footer-section {
         margin-bottom: 150px;
     }
-    .footer-section .icl-logo-area {
-        float:none;
-        margin-left: 40px;
-        margin-bottom: 50px;
-        margin-top: 14px;
-    }
-
     .footer-section .fmi-area {
         float:none;
         margin-left: 40px;
@@ -627,3 +515,195 @@ br.clearing {
 }
 
 
+@-webkit-keyframes cf4FadeInOut {
+    0% {
+      opacity: 1;
+    }
+
+    17% {
+      opacity: 1;
+    }
+
+    25% {
+      opacity: 0;
+    }
+
+    92% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-moz-keyframes cf4FadeInOut {
+    0% {
+      opacity: 1;
+    }
+
+    17% {
+      opacity: 1;
+    }
+
+    25% {
+      opacity: 0;
+    }
+
+    92% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-o-keyframes cf4FadeInOut {
+    0% {
+      opacity: 1;
+    }
+
+    17% {
+      opacity: 1;
+    }
+
+    25% {
+      opacity: 0;
+    }
+
+    92% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes cf4FadeInOut {
+    0% {
+      opacity: 1;
+    }
+
+    17% {
+      opacity: 1;
+    }
+
+    25% {
+      opacity: 0;
+    }
+
+    92% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  #cf4a {
+    position: relative;
+    height: 700px;
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  #cf4a img {
+    position: absolute;
+    left: 0;
+  }
+
+  #cf4a img {
+    -webkit-animation-name: cf4FadeInOut;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 7s;
+
+    -moz-animation-name: cf4FadeInOut;
+    -moz-animation-timing-function: ease-in-out;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-duration: 7s;
+
+    -o-animation-name: cf4FadeInOut;
+    -o-animation-timing-function: ease-in-out;
+    -o-animation-iteration-count: infinite;
+    -o-animation-duration: 7s;
+
+    animation-name: cf4FadeInOut;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 7s;
+  }
+
+
+  #cf4a img:nth-of-type(1) {
+    -webkit-animation-delay: 5s;
+    -moz-animation-delay: 5s;
+    -o-animation-delay: 5s;
+    animation-delay: 5s;
+  }
+
+  #cf4a img:nth-of-type(2) {
+    -webkit-animation-delay: 4s;
+    -moz-animation-delay: 4s;
+    -o-animation-delay: 4s;
+    animation-delay: 4s;
+  }
+
+  #cf4a img:nth-of-type(3) {
+    -webkit-animation-delay: 3s;
+    -moz-animation-delay: 3s;
+    -o-animation-delay: 3s;
+    animation-delay: 3s;
+  }
+
+  #cf4a img:nth-of-type(4) {
+    -webkit-animation-delay: 2s;
+    -moz-animation-delay: 2s;
+    -o-animation-delay: 2s;
+    animation-delay: 2s;
+  }
+
+  #cf4a img:nth-of-type(5) {
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    -o-animation-delay: 1s;
+    animation-delay: 1s;
+  }
+
+  #cf4a img:nth-of-type(6) {
+    -webkit-animation-delay: 0;
+    -moz-animation-delay: 0;
+    -o-animation-delay: 0;
+    animation-delay: 0;
+  }
+
+  .bgfooter {
+    background-color: white;
+}
+
+#footer {
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+.englishfooter1 {
+    font-weight: 500;
+    font-size: 15px;
+    color: #505050;
+    text-align: justify;
+    padding-top: 40px;
+}
+
+.englishfooter2 {
+    font-weight: 500;
+    font-size: 15px;
+    color: #505050;
+    padding-top: 10px;
+}
+
+.logo {
+    max-height: 40px;
+}
